@@ -27,7 +27,7 @@ Current uncompressed file size: **~6.26 KB**.
 ### How to run it
 
 ```bash
-git clone git@github.com:jow5445/qr-app.git
+git clone https://github.com/jow5445/qr-app.git
 cd qr-app
 ```
 
