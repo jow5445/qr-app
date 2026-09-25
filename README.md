@@ -65,8 +65,8 @@ This project is part of the Hack Club 5 KB Challenge, so keeping the file small 
 The final size of the project is:
 
 ```text
-[Add the final size here]
-```
+6.7
+``
 
 To check the size on Linux:
 
@@ -85,7 +85,7 @@ The size above is the uncompressed size of the HTML file.
 ## Keeping It Small
 
 I kept the project lightweight by:
-
+* I used html minifier
 * Using a single HTML file
 * Not using React or other frameworks
 * Not using CSS frameworks
@@ -109,12 +109,6 @@ The text entered by the user is encoded and sent to the API.
 ## Screenshots
 
 Add screenshots of the project here.
-
-## Hack Club 5 KB Challenge
-
-This project was made for the Hack Club 5 KB Challenge.
-
-The challenge is about seeing how much you can build while keeping the project extremely small. It also encourages experimenting with plain HTML, CSS, and JavaScript instead of relying on large frameworks and dependencies.
 
 ## License
 
