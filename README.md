@@ -1,115 +1,50 @@
-# QR Code Generator
+# Tiny QR Generator
 
-A simple and lightweight QR Code Generator built with HTML, CSS, and JavaScript.
+QR code generator squeezed into a single HTML file.
 
-I built this project as part of the Hack Club 5 KB Challenge. The idea of the challenge is to build a useful website or app while keeping the project as small as possible.
+---
 
-## Features
+### What it does
 
-* Generate a QR code from text or a URL
-* Download the generated QR code
-* Clear the input
-* Press Enter to generate a QR code
-* Basic input validation
-* Error messages
-* Loading state while generating the QR code
+* Generates QR codes from raw text or URLs on the fly
+* Supports `Enter` key shortcut & quick clear
+* Zero external assets, libraries, or build steps
 
-## How it works
+---
 
-The user enters a URL or any text and clicks the "Generate QR Code" button.
+### Size & Footprint
 
-The application sends the entered value to the QR Server API and uses the returned image as the generated QR code.
+Current uncompressed file size: **~6.26 KB**.
 
-The generated QR code can then be downloaded from the page.
+#### How it stays tiny
+* **Single file architecture:** All HTML, CSS, and JS live directly inside `index.html`.
+* **Zero dependencies:** No frameworks, UI libraries, or local icon packs.
+* **Flat DOM:** Stripped down to the bare markup needed for layout and accessibility.
+* **Minified build:** Cleaned up whitespace and redundant boilerplate.
 
-## Technologies
+---
 
-This project uses:
-
-* HTML
-* CSS
-* JavaScript
-* QR Server API
-
-There are no frameworks or build tools.
-
-## Project Structure
-
-The project is intentionally kept in one file.
-
-```text
-QR-APP-Lightweight/
-└── index.html
-```
-
-The HTML, CSS, and JavaScript are all inside `index.html`.
-
-## Running the Project
-
-There is nothing to install.
-
-Just clone the repository:
+### How to run it
 
 ```bash
 git clone git@github.com:jow5445/qr-app.git
+cd qr-app
 ```
 
-Then open `index.html` in your browser.
+Just double-click `index.html` or open it directly in any browser.
 
-You can also run it using a local development server if you prefer.
+---
 
-## Project Size
+### Under the hood
 
-This project is part of the Hack Club 5 KB Challenge, so keeping the file small is one of the main goals.
-
-The final size of the project is:
-
-```text
-6.7
-``
-
-To check the size on Linux:
-
-```bash
-wc -c index.html
-```
-
-On Windows PowerShell:
-
-```powershell
-(Get-Item index.html).Length
-```
-
-The size above is the uncompressed size of the HTML file.
-
-## Keeping It Small
-
-I kept the project lightweight by:
-* I used html minifier
-* Using a single HTML file
-* Not using React or other frameworks
-* Not using CSS frameworks
-* Not adding image assets
-* Keeping the DOM structure simple
-* Keeping the JavaScript and CSS inside the same file
-* Avoiding unnecessary dependencies
-
-## API
-
-The project uses the QR Server API to generate the QR codes.
-
-The request looks like this:
+QR generation is offloaded to the [QR Server API](https://goqr.me/api/):
 
 ```text
 https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=YOUR_DATA
 ```
 
-The text entered by the user is encoded and sent to the API.
+---
 
-## Screenshots
+### License
 
-Add screenshots of the project here.
-
-## License
-
-This project is open source and available under the MIT License.
+MIT
