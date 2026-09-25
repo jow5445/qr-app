@@ -1,5 +1,7 @@
 # Tiny QR Generator
 
+![Screenshot](https://cdn.hackclub.com/01a0d906-f1e1-78e7-89a8-b4a0f53b9394/QRCodeGenerator.png)
+
 QR code generator squeezed into a single HTML file.
 
 ---
